@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 	// Set your APIkey and Domain
 	//
 	private static final String API_KEY = "f9dbc8e7-502b-49e8-a244-a6f34e65f6a3";
-	private static final String DOMAIN = "localhost";
+	private static final String DOMAIN = "yusuke84.com";
 
 	private Peer			_peer;
 	private MediaStream		_localStream;
