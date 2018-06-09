@@ -20,10 +20,6 @@ video {
   width: 100%;
 }
 
-#infomationField1 {
-  text-align: center;
-}
-
-#infomationField2 {
+.informationField {
   text-align: center;
 }
