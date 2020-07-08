@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
 	//
 	// Set your APIkey and Domain
 	//
-	private static final String API_KEY = "f9dbc8e7-502b-49e8-a244-a6f34e65f6a3";
-	private static final String DOMAIN = "localhost";
+	private static final String API_KEY = "";
+	private static final String DOMAIN = "";
 
 	private Peer			_peer;
 	private MediaStream		_localStream;
@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onCallback(Object object) {
 				PeerError error = (PeerError) object;
-				Log.d(TAG, "[On/Error]" + error);
+				Log.d(TAG, "[On/Error]" + error.getMessage());
 			}
 		});
 
@@ -362,7 +362,7 @@ public class MainActivity extends Activity {
 			public void onCallback(Object object)
 			{
 				PeerError error = (PeerError) object;
-				Log.d(TAG, "RoomEventEnum.ERROR:" + error);
+				Log.d(TAG, "RoomEventEnum.ERROR:" + error.getMessage());
 			}
 		});
 
